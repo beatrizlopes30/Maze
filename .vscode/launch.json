@@ -8,8 +8,13 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
+<<<<<<< HEAD
       "cwd": "c:/Users/Windows Lite BR/Desktop/Labirinto",
       "program": "c:/Users/Windows Lite BR/Desktop/Labirinto/build/Debug/outDebug",
+=======
+      "cwd": "c:/Users/Windows Lite BR/Desktop/Baymax/Labirinto",
+      "program": "c:/Users/Windows Lite BR/Desktop/Baymax/Labirinto/build/Debug/outDebug",
+>>>>>>> 0058439d67e417f001faaa5d8579bc673d6c7c00
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [

@@ -11,7 +11,11 @@
 #define MOTOR_ENA 6
 #define MOTOR_ENB 7
 
+<<<<<<< HEAD
 // Sensores IR 
+=======
+// Sensores IR (apenas 2 laterais)
+>>>>>>> 0058439d67e417f001faaa5d8579bc673d6c7c00
 #define IR_LADO_DIREITO A0     // IR lateral direito
 #define IR_LADO_ESQUERDO A1    // IR lateral esquerdo
 
@@ -233,11 +237,19 @@ void navegacaoPreventiva(unsigned int distDir, unsigned int distEsq, bool parede
     Serial.println(">>> CURVA SUAVE DIREITA (PREVENTIVA)");
     moverAjustado(120, 80);
   }
+<<<<<<< HEAD
   else if (paredeDir && !paredeEsq && distEsq > 20) {
     Serial.println(">>> CURVA SUAVE ESQUERDA (PREVENTIVA)");
     moverAjustado(80, 120);
   }
   else if (distDir > distEsq && distDir > 15) {
+=======
+  else if (paredeDir && !paredeEsq && distEsq > 200) {
+    Serial.println(">>> CURVA SUAVE ESQUERDA (PREVENTIVA)");
+    moverAjustado(80, 120);
+  }
+  else if (distDir > distEsq && distDir > 150) {
+>>>>>>> 0058439d67e417f001faaa5d8579bc673d6c7c00
     Serial.println(">>> TENDÊNCIA DIREITA (LASER)");
     moverAjustado(100, 80);
   }
@@ -247,7 +259,11 @@ void navegacaoPreventiva(unsigned int distDir, unsigned int distEsq, bool parede
   }
   else {
     Serial.println(">>> FRENTE CAUTELOSA");
+<<<<<<< HEAD
     moverFrente(8);
+=======
+    moverFrente(80);
+>>>>>>> 0058439d67e417f001faaa5d8579bc673d6c7c00
   }
 }
 
